@@ -7,7 +7,7 @@
     npx knex init
     npx knex migrate:make <add_table>
     npx knex migrate:up 'or' migrate:latest
-    npx knex seed:make <add_table_rows> #add as many rows as the number of columns.
+    npx knex seed:make <add_table_rows> //add as many rows as the number of columns.
     npx knex seed:run
 }
 
