@@ -11,7 +11,7 @@
     npx knex seed:run
 }
 
-knexfile.js =>{}; {
+knexfile.js => {
 
       module.exports = {
         development: {
