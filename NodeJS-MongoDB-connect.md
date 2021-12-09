@@ -12,6 +12,7 @@ mkdir ./models/Post.js =>
 	});
 	module.exports = mongoose.model("Post", PostSchema);
 }
+
 touch test.js => {
 
 	const mongoose = require("mongoose");
@@ -35,6 +36,7 @@ touch test.js => {
   	}
 	);
 }
+
 app.js => {
 
 	const express = require("express");
