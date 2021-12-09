@@ -1,7 +1,7 @@
 # NodeJS MongoDB connect 
 
 [ MongoDB => 
-mkdir ./models/Post.js =>;
+mkdir ./models/Post.js =>);
 {
 	const mongoose = require("mongoose");
 
