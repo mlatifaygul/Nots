@@ -42,8 +42,10 @@ knexfile.js => {
 
       exports.up = function (knex) {
       return knex.schema
-        .createTable("<tableName>", (table) => {}
-
+        .createTable("<tableName>", (table) => 
+        {
+        }
+        
       exports.down = function (knex) {
       return knex.schema
         .dropTableIfExists("giris_bilgi") };
