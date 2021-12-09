@@ -1,7 +1,7 @@
 # NodeJS PG Connect
 
-(#Terminal =>); 
-{
+#Terminal => {
+
     npm i knex pg
     npm i -g knex
     npx knex init
@@ -11,39 +11,41 @@
     npx knex seed:run
 }
 
-knexfile.js => 
-{
+knexfile.js =>{}; {
 
-  module.exports = {
-    development: {
-      client: "pg",
-      connection: {
-        database: "arin",
-        user: "admin",
-        password: "admin",
-      },
-      pool: {
-        min: 2,
-        max: 10,
-      },
-      production: {},
+      module.exports = {
+        development: {
+          client: "pg",
+          connection: {
+            database: "arin",
+            user: "admin",
+            password: "admin",
+          },
+          pool: {
+            min: 2,
+            max: 10,
+          },
+          production: {},
 
-      migrations: {
-        directory: "./data/migrations",
-      },
-      seeds: {
-        directory: "./data/seeds",
-      },
-    },
-  };
-}
-./data/migrations/<add_table> => {
-  exports.up = function (knex) {
-  return knex.schema
-    .createTable("<tableName>", (table) => {}
+          migrations: {
+            directory: "./data/migrations",
+          },
+          seeds: {
+            directory: "./data/seeds",
+          },
+        },
+      };
+    
+   }
   
-  exports.down = function (knex) {
-  return knex.schema
-    .dropTableIfExists("giris_bilgi") };
+./data/migrations/<add_table> => {
+
+      exports.up = function (knex) {
+      return knex.schema
+        .createTable("<tableName>", (table) => {}
+
+      exports.down = function (knex) {
+      return knex.schema
+        .dropTableIfExists("giris_bilgi") };
 }
 
