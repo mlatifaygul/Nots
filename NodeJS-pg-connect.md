@@ -42,8 +42,8 @@ knexfile.js => {
 
       exports.up = function (knex) {
       return knex.schema
-        .createTable("<tableName>", (table) => 
-        {
+        .createTable("<tableName>", (table) => {
+        
         }
         
       exports.down = function (knex) {
