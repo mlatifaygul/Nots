@@ -45,10 +45,13 @@ app.js => {
 	const port = 3000;
 	const hostname = "127.0.0.1";
 	const mongoose = require("mongoose");
+	const Handlebars = require("handlebars");
+	const { allowInsecurePrototypeAccess, } = require("@handlebars/allow-prototype-access");
 
 	mongoose.connect("mongodb://127.0.0.1/nodeblog_db", {
 	  useNewUrlParser: true,
 	  useUnifiedTopology: true,
+	  handlebars: allowInsecurePrototypeAccess(Handlebars),
 	});
 
 	app.engine("hbs", engine({ extname: ".hbs", defaultLayout: "main" }));
