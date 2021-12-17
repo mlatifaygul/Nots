@@ -1,7 +1,7 @@
 # NodeJS MongoDB connect 
 
-[ MongoDB => 
-mkdir ./models/Post.js =>
+
+`mkdir ./models/Post.js`
 ```js
 // not 
 const mongoose = require("mongoose");
@@ -15,7 +15,8 @@ module.exports = mongoose.model("Post", PostSchema);
 
 
 
-touch test.js => 
+
+`touch test.js`
 
 ```js
 const mongoose = require("mongoose");
@@ -40,7 +41,7 @@ const mongoose = require("mongoose");
 	);
 ```
 	
-app.js =>
+`app.js`
 
 ```js
 	const express = require("express");
