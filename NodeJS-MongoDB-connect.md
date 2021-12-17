@@ -11,15 +11,14 @@ const PostSchema = new mongoose.Schema({
 	date: { type: Date, default: Date.now },
 });
 module.exports = mongoose.model("Post", PostSchema);
-
-
 ```
 
 
 
-touch test.js => {
+touch test.js => 
 
-	const mongoose = require("mongoose");
+```
+const mongoose = require("mongoose");
 	const Post = require("./models/Post");
 
 	mongoose.connect(
@@ -39,10 +38,11 @@ touch test.js => {
     	console.log(error, post);
   	}
 	);
-}
+```
+	
+app.js =>
 
-app.js => {
-
+```
 	const express = require("express");
 	const { engine } = require("express-handlebars");
 	const app = express();
@@ -60,4 +60,4 @@ app.js => {
 
 	app.engine("hbs", engine({ extname: ".hbs", defaultLayout: "main" }));
 	app.set("view engine", "hbs");
-} ]
+```
