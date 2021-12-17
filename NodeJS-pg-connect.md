@@ -1,7 +1,7 @@
 # NodeJS PG Connect
 
 #Terminal => 
-```hub
+```bash
     npm i knex pg
     npm i -g knex
     npx knex init
