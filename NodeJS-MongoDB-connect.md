@@ -17,7 +17,7 @@ module.exports = mongoose.model("Post", PostSchema);
 
 touch test.js => 
 
-```
+```js
 const mongoose = require("mongoose");
 	const Post = require("./models/Post");
 
@@ -42,7 +42,7 @@ const mongoose = require("mongoose");
 	
 app.js =>
 
-```
+```js
 	const express = require("express");
 	const { engine } = require("express-handlebars");
 	const app = express();
