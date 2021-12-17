@@ -20,26 +20,26 @@ module.exports = mongoose.model("Post", PostSchema);
 `touch test.js`
 
 ```js
-const mongoose = require("mongoose");
-	const Post = require("./models/Post");
+  const mongoose = require("mongoose");
+  const Post = require("./models/Post");
 
-	mongoose.connect(
-  	"mongodb+srv://arin:toor@nodedemo.b8xph.mongodb.net/ariNode?retryWrites=true&w=majority",
-  	{
-    	useNewUrlParser: true,
-    	useUnifiedTopology: true,
-  	}
-	);
+  mongoose.connect(
+    "mongodb+srv://arin:toor@nodedemo.b8xph.mongodb.net/ariNode?retryWrites=true&w=majority",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  );
 
-	Post.create(
-  	{
-    	title: "Baslik",
-    	content: "İcerik",
-  	},
-  	(error, post) => {
-    	console.log(error, post);
-  	}
-	);
+  Post.create(
+    {
+      title: "Baslik",
+      content: "İcerik",
+    },
+    (error, post) => {
+      console.log(error, post);
+    }
+  );
 ```
 	
 `app.js`
