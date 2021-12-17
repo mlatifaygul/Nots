@@ -1,6 +1,6 @@
 # NodeJS PG Connect
 
-#Terminal => 
+`Terminal =>` 
 ```pwsh
     npm i knex pg
     npm i -g knex
@@ -11,7 +11,7 @@
     npx knex seed:run
 ```
 
-knexfile.js => 
+`knexfile.js => `
 
 ```js
 module.exports = {
@@ -38,7 +38,7 @@ module.exports = {
       };
 ```
 
-./data/migrations/<add_table> => 
+`./data/migrations/<add_table> =>`
 
 ```js
       exports.up = function (knex) {
