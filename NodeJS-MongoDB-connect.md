@@ -2,7 +2,7 @@
 
 
 `mkdir ./models
-- touch /models/Post.js`
+-touch /models/Post.js`
 ```js
 // not 
 const mongoose = require("mongoose");
