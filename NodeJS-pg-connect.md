@@ -1,7 +1,7 @@
 # NodeJS PG Connect
 
-#Terminal => {
-
+#Terminal => 
+```pwsh
     npm i knex pg
     npm i -g knex
     npx knex init
@@ -9,11 +9,12 @@
     npx knex migrate:up 'or' migrate:latest
     npx knex seed:make <add_table_rows> //add as many rows as the number of columns.
     npx knex seed:run
-}
+```
 
-knexfile.js => {
+knexfile.js => 
 
-      module.exports = {
+```js
+module.exports = {
         development: {
           client: "pg",
           connection: {
@@ -35,11 +36,11 @@ knexfile.js => {
           },
         },
       };
-    
-   }
-  
-./data/migrations/<add_table> => {
+```
 
+./data/migrations/<add_table> => 
+
+```js
       exports.up = function (knex) {
       return knex.schema
         .createTable("<tableName>", (table) => {
@@ -49,5 +50,5 @@ knexfile.js => {
       exports.down = function (knex) {
       return knex.schema
         .dropTableIfExists("giris_bilgi") };
-}
+```
 
