@@ -1,7 +1,8 @@
 # NodeJS MongoDB connect 
 
 
-`mkdir ./models/Post.js`
+`mkdir ./models
+touch /models/Post.js`
 ```js
 // not 
 const mongoose = require("mongoose");
