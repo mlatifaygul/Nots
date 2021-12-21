@@ -1,4 +1,5 @@
-```pwsh
+#Packets
+```bash
     npm i express
     npm i express-handlebars
     npm i mongoose
