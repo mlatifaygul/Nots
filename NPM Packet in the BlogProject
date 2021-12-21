@@ -1,4 +1,5 @@
-``pwsh
+```pwsh
+pwsh
 npm i express
 npm i express-handlebars
 npm i mongoose
@@ -11,4 +12,4 @@ npm i connect-mongo
 npm i method-override
 npm i nodemailer
 npm i moment
-``
+```
