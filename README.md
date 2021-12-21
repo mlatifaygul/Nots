@@ -1,5 +1,5 @@
 # Nots
 `Notlarım`
-- [mongo nodejs](./NodeJS-MongoDB-connect.md)
-- [NodeJS-pg-connect.md](./NodeJS-pg-connect.md)
+- [NodeJS-MongoDB-connect](./NodeJS-MongoDB-connect.md)
+- [NodeJS-pg-connect](./NodeJS-pg-connect.md)
 
