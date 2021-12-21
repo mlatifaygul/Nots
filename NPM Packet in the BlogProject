@@ -1,6 +1,6 @@
 #Packets
 
-```bash
+ ```bash
     npm i express
     npm i express-handlebars
     npm i mongoose
@@ -13,4 +13,4 @@
     npm i method-override
     npm i nodemailer
     npm i moment
-```
+ ```
