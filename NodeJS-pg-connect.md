@@ -2,8 +2,8 @@
 
 `Terminal` 
 ```bash
-    npm i knex pg
     npm i -g knex
+    npm i knex pg
     npx knex init
     npx knex migrate:make <add_table>
     npx knex migrate:up 'or' migrate:latest
