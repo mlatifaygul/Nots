@@ -1,4 +1,5 @@
-#Packets
+
+`Packets`
 
  ```bash
     npm i express
@@ -13,11 +14,4 @@
     npm i method-override
     npm i nodemailer
     npm i moment
- ```
- 
- `Node`
- ```js
- (req ,res) => {
-  console.log(req.body)
- }
  ```
