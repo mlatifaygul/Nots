@@ -24,7 +24,7 @@ module.exports = mongoose.model("Post", PostSchema);
   const Post = require("./models/Post");
 
   mongoose.connect(
-    "mongodb+srv://arin:toor@nodedemo.b8xph.mongodb.net/ariNode?retryWrites=true&w=majority",
+    "mongodb+srv://admin:admin@nodedemo.b8xph.mongodb.net/ariNode?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
