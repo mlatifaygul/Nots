@@ -22,6 +22,7 @@ module.exports = mongoose.model("Post", PostSchema);
 ```js
   const mongoose = require("mongoose");
   const Post = require("./models/Post");
+  require("dotenv").config();
 
   mongoose.connect(
     process.env.DB_CONNECT,
